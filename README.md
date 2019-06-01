@@ -15,7 +15,7 @@ With the inclusion of design elements such as :-
 2. Instant feedback mechanism
 3. Social functionality
 4. Video + Audio
-5.Excercise
+5. Excercise
 
 In comparison to the original application, the web app offers several advantages.
 
