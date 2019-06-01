@@ -22,9 +22,7 @@ In comparison to the original application, the web app offers several advantages
 1.Cross-platform compability
 
   a. IOS users are now able to use the app
-  
   b. The app can be accessed through dekstop
   
 2. Better-optimized
-
-   It will be easier to optimize the app despite the wide array of devices available in the market
+  It will be easier to optimize the app despite the wide array of devices available in the market
