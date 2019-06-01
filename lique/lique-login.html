@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiQue:Learning Grammar</title>
+    <meta name="description" content="Learning grammar the fun way">
+    <link rel="stylesheet" href="main.css">
+
+    <script type='text/javascript' src='jquery.particleground.js'></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            particleground(document.getElementById('particles'), {
+                dotColor: '#4c6bd3',
+                lineColor: '#4c6bd3'
+            });
+            var intro = document.getElementById('intro');
+            intro.style.marginTop = -intro.offsetHeight / 2 + 'px';
+        }, false);
+
+    </script>
+    
+    <!--- Firebase config--->
+    
+    <script type="text/javascript" src="config.js"></script>
+
+<!--- firebase ui--->
+    
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.6.0/firebaseui.js"></script>
+    
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.6.0/firebaseui.css" />
+    
+   
+    
+<!---Firebase auth Script--->
+    
+    <script type="text/javascript">
+      // FirebaseUI config.
+      var uiConfig = {
+        signInSuccessUrl: '<url-to-redirect-to-on-success>',
+        signInOptions: [
+          // Leave the lines as is for the providers you want to offer your users.
+          firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+          firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+          firebase.auth.TwitterAuthProvider.PROVIDER_ID,
+          firebase.auth.GithubAuthProvider.PROVIDER_ID,
+          firebase.auth.EmailAuthProvider.PROVIDER_ID,
+          firebase.auth.PhoneAuthProvider.PROVIDER_ID,
+          firebaseui.auth.AnonymousAuthProvider.PROVIDER_ID
+        ],
+        // tosUrl and privacyPolicyUrl accept either url string or a callback
+        // function.
+        // Terms of service url/callback.
+        tosUrl: '<your-tos-url>',
+        // Privacy policy url/callback.
+        privacyPolicyUrl: function() {
+          window.location.assign('<your-privacy-policy-url>');
+        }
+      };
+
+      // Initialize the FirebaseUI Widget using Firebase.
+      var ui = new firebaseui.auth.AuthUI(firebase.auth());
+      // The start method will wait until the DOM is loaded.
+      ui.start('#firebaseui-auth-container', uiConfig);
+    </script>
+    
+    <style>
+    
+    #firebaseui-auth-container
+        {
+            z-index: 1000;
+            background-color: black;
+        }
+        
+    </style>
+
+
+
+
+</head>
+
+
+
+<body>
+
+    <div id="particles">
+        <div id="intro">
+            <h1>LiqueQuest</h1>
+            <p>A language learning application</p>
+            <div id="firebaseui-auth-container"></div>
+        </div>
+    </div>
+
+ 
+
+   
+
+</body>
