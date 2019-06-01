@@ -24,4 +24,4 @@ Cross-platform compability
 2. The app can be accessed through dekstop
   
 Better-optimized
-1. will be easier to optimize the app despite the wide array of devices available in the market
+1. It will be easier to optimize the app despite the wide array of devices available in the market
