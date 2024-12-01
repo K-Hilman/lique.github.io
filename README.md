@@ -2,7 +2,8 @@
 
 A language learning application from android, ported to web-format for greater versatility.
 
-<del>This web-site is under progress. </del>. It is built as an optimization effort of the original LiQue Android Application (https://k-hilman.github.io/lique.html)
+<del>This web-site is under progress. </del>. It is built as an optimization effort of the original LiQue Android Application (https://k-hilman.github.io/lique.html).
+
 I am no longer working on this project, please download the lique.apk to test the app, but I provide no warranty that it is working.
 
 The LiQue Android Application is an app designed to help beginners in learning English.
